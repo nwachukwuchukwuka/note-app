@@ -61,6 +61,7 @@ const EditNotes = ({ notes, setNotes }) => {
             autoFocus
             placeholder="Title"
             value={title}
+            required
             onChange={(e) => setTitle(e.target.value)}
           />
           <textarea
@@ -68,6 +69,7 @@ const EditNotes = ({ notes, setNotes }) => {
             rows="6"
             placeholder="Note details..."
             value={detail}
+            required
             onChange={(e) => setDetail(e.target.value)}
           ></textarea>
           <div className="mt-4 flex justify-between">
@@ -83,7 +85,6 @@ const EditNotes = ({ notes, setNotes }) => {
             >
               Delete
             </button>
-           
           </div>
         </form>
       </section>

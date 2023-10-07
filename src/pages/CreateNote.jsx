@@ -50,6 +50,7 @@ const CreateNote = ({ setNotes }) => {
             autoFocus
             placeholder="Title"
             value={title}
+            required
             onChange={(e) => setTitle(e.target.value)}
             className="w-full border rounded-md py-2 px-3 focus:outline-none"
           />
@@ -57,6 +58,7 @@ const CreateNote = ({ setNotes }) => {
             rows="6"
             placeholder="Note details..."
             value={detail}
+            required
             onChange={(e) => setDetail(e.target.value)}
             className="w-full mt-3 border rounded-md py-2 px-3 focus:outline-none"
           ></textarea>
